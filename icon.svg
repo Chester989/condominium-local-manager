@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title">
+  <title id="title">Ícone Gestão de Condomínios</title>
+  <rect width="512" height="512" rx="96" fill="#126b63"/>
+  <path d="M128 416V142l128-62 128 62v274H128Z" fill="#fff"/>
+  <path d="M184 176h48v48h-48zm96 0h48v48h-48zm-96 80h48v48h-48zm96 0h48v48h-48z" fill="#126b63"/>
+  <path d="M224 336h64v80h-64z" fill="#126b63"/>
+</svg>
+

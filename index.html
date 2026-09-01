@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gestão de Condomínios</title>
+    <meta name="theme-color" content="#126b63" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="icon" href="icon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css?v=20260705-4" />
+  </head>
+  <body>
+    <div id="app"></div>
+
+    <dialog id="modal" class="modal">
+      <div class="modal-shell">
+        <div class="modal-head">
+          <h2 id="modalTitle"></h2>
+          <button class="icon-button" type="button" data-close-modal aria-label="Fechar">×</button>
+        </div>
+        <div id="modalBody"></div>
+      </div>
+    </dialog>
+
+    <input id="importFile" class="visually-hidden" type="file" accept=".json,.zip,.csv,.xlsx,application/json,application/zip,text/csv" />
+    <div id="printArea" aria-hidden="true"></div>
+
+    <script src="app.js?v=20260705-4"></script>
+    <script>
+      if ("serviceWorker" in navigator && location.protocol.startsWith("http")) {
+        navigator.serviceWorker.register("./sw.js").catch(() => {});
+      }
+    </script>
+  </body>
+</html>
